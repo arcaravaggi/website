@@ -1,0 +1,282 @@
+---
+title: "Module 4 — Descriptive Statistics"
+draft: false
+type: "page"
+layout: "single"
+---
+
+
+
+<!-- Dropdown -->
+<p><select id="module-select" class="course-dropdown" onchange="if (this.value) window.location.href=this.value;">
+<option value="">Jump to a module…</option>
+<option value="/r_for_nervous_humans/intro_stats/">Welcome</option>
+<option value="/r_for_nervous_humans/intro_stats/module-1/">1. Getting Started</option>
+<option value="/r_for_nervous_humans/intro_stats/module-2/">2. Data &amp; Penguins</option>
+<option value="/r_for_nervous_humans/intro_stats/module-3/">3. Visualisation</option>
+<option value="/r_for_nervous_humans/intro_stats/module-5/">5. Are These Groups Different?</option>
+<option value="/r_for_nervous_humans/intro_stats/module-6/">6. Working with Categories</option>
+<option value="/r_for_nervous_humans/intro_stats/module-7/">7. When Data Gets Weird</option>
+<option value="/r_for_nervous_humans/intro_stats/module-8/">8. Relationships Between Variables</option>
+<option value="/r_for_nervous_humans/intro_stats/module-9/">9. Linear Regression</option>
+</select></p>
+<div id="welcome-to-module-4" class="section level2">
+<h2>Welcome to module 4</h2>
+<p>Now that we can look at penguin data and visualise them, it’s time to <em>summarise</em> our data numerically.<br />
+Descriptive statistics help us answer questions like:</p>
+<ul>
+<li>What’s a “typical” value?<br />
+</li>
+<li>How much do values vary (differ)?<br />
+</li>
+<li>How confident are we about the average value of our sample? Does it accurately reflect the population?</li>
+</ul>
+<p>Think of this as learning the language of the data before asking bigger questions.</p>
+<hr />
+</div>
+<div id="prepare-your-dataset" class="section level2">
+<h2>Prepare your dataset</h2>
+<p>Notice that we’re now using an additional package, <code>ggplot2</code>. This supports more sophisticated plots and makes it easier to construct high-quality figures.</p>
+<pre class="r"><code>library(palmerpenguins)
+library(ggplot2)
+
+data(&quot;penguins&quot;)
+
+# Remove only the missing values for columns we need
+penguins_clean &lt;- penguins[!is.na(penguins$bill_length_mm) &amp; 
+                            !is.na(penguins$species) &amp;
+                            !is.na(penguins$body_mass_g), ]</code></pre>
+<p>Here, the square brackets mean ‘look inside this thing’. Square brackets support indexing with rows separated from columns by a comma. So:</p>
+<pre class="r"><code>penguins_clean[1,]</code></pre>
+<pre><code>## # A tibble: 1 × 8
+##   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+##   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+## 1 Adelie  Torgersen           39.1          18.7               181        3750
+## # ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+<p>…gives you row 1. Similarly,</p>
+<pre class="r"><code>penguins_clean[,1]</code></pre>
+<pre><code>## # A tibble: 342 × 1
+##    species
+##    &lt;fct&gt;  
+##  1 Adelie 
+##  2 Adelie 
+##  3 Adelie 
+##  4 Adelie 
+##  5 Adelie 
+##  6 Adelie 
+##  7 Adelie 
+##  8 Adelie 
+##  9 Adelie 
+## 10 Adelie 
+## # ℹ 332 more rows</code></pre>
+<p>…gives you column one. And,</p>
+<pre class="r"><code>penguins_clean[1,1]</code></pre>
+<pre><code>## # A tibble: 1 × 1
+##   species
+##   &lt;fct&gt;  
+## 1 Adelie</code></pre>
+<p>…gives you the cell found at row 1, column 1. You can use more complicated arguments to extract multiple values using an array argument <code>:</code> for concurrent data or <code>c()</code> for non-concurrent data. If that sounds like complete gibberish:</p>
+<pre class="r"><code>penguins_clean[,2:5]</code></pre>
+<pre><code>## # A tibble: 342 × 4
+##    island    bill_length_mm bill_depth_mm flipper_length_mm
+##    &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;
+##  1 Torgersen           39.1          18.7               181
+##  2 Torgersen           39.5          17.4               186
+##  3 Torgersen           40.3          18                 195
+##  4 Torgersen           36.7          19.3               193
+##  5 Torgersen           39.3          20.6               190
+##  6 Torgersen           38.9          17.8               181
+##  7 Torgersen           39.2          19.6               195
+##  8 Torgersen           34.1          18.1               193
+##  9 Torgersen           42            20.2               190
+## 10 Torgersen           37.8          17.1               186
+## # ℹ 332 more rows</code></pre>
+<pre class="r"><code>penguins_clean[,c(2,5)]</code></pre>
+<pre><code>## # A tibble: 342 × 2
+##    island    flipper_length_mm
+##    &lt;fct&gt;                 &lt;int&gt;
+##  1 Torgersen               181
+##  2 Torgersen               186
+##  3 Torgersen               195
+##  4 Torgersen               193
+##  5 Torgersen               190
+##  6 Torgersen               181
+##  7 Torgersen               195
+##  8 Torgersen               193
+##  9 Torgersen               190
+## 10 Torgersen               186
+## # ℹ 332 more rows</code></pre>
+<p>The first argument returns all of columns 1 to 5. The second only returns columns 2 and 5.</p>
+<pre class="r"><code>penguins_clean &lt;- penguins[!is.na(penguins$bill_length_mm) &amp; 
+                            !is.na(penguins$species) &amp;
+                            !is.na(penguins$body_mass_g), ]</code></pre>
+<p>So here we’re looking within <code>penguins</code> and excluding rows (using <code>!is.na()</code>) where there are NAs in the columns <code>bill_length_mm</code>, ‘species’, and ’body_mass_g`. We are <em>not</em> selecting so are including them all.</p>
+<hr />
+<div id="measures-of-central-tendency" class="section level3">
+<h3>Measures of central tendency</h3>
+<p><strong>Mean</strong> — the “typical” value</p>
+<pre class="r"><code>mean(penguins_clean$bill_length_mm)</code></pre>
+<pre><code>## [1] 43.92193</code></pre>
+<p>The mean is the foundation for most statistical tests like t-tests and regression. It has mathematical properties that make differences and variation easy to compute. Later, we’ll build everything from this anchor.</p>
+<p><strong>Median</strong> — the middle value</p>
+<pre class="r"><code>median(penguins_clean$bill_length_mm)</code></pre>
+<pre><code>## [1] 44.45</code></pre>
+<p>The median is the value in the middle of the sorted data. Unlike the mean, it’s robust to extreme values.</p>
+<hr />
+</div>
+<div id="spread-how-much-the-data-varies" class="section level3">
+<h3>Spread — how much the data varies</h3>
+<p><strong>Standard deviation (SD)</strong></p>
+<pre class="r"><code>sd(penguins_clean$bill_length_mm)</code></pre>
+<pre><code>## [1] 5.459584</code></pre>
+<p>The Standard Deviation:
+* Shows the typical distance of a given data point from the mean (i.e., the spread of the data)
+* Small SD = tightly clustered; large SD = spread out.</p>
+<p><strong>Standard error (SE)</strong></p>
+<pre class="r"><code>se &lt;- sd(penguins_clean$bill_length_mm) / sqrt(length(penguins_clean$bill_length_mm))
+se</code></pre>
+<pre><code>## [1] 0.2952205</code></pre>
+<p>The Standard Error is computed by dividing the SD by the square root of the number of measurements in the sample. It shows us how accurately we can estimate the true average of the whole population based on our sample.
+* Smaller SE = more confidence in the mean (i.e., our sample mean is close(r) to the population mean)</p>
+<p><strong>95% confidence interval (CI)</strong></p>
+<pre class="r"><code>mean_val &lt;- mean(penguins_clean$bill_length_mm)
+ci_lower &lt;- mean_val - 1.96 * se
+ci_upper &lt;- mean_val + 1.96 * se
+c(ci_lower, ci_upper)</code></pre>
+<pre><code>## [1] 43.34330 44.50056</code></pre>
+<p>The CI gives a plausible range for the true population mean. We typically use the 95% threshold as this corresponds with our statistical probability threshold of p = 0.05. It basically indicates that if we repeated the study many times, around 95% of all calculated intervals would contain the true mean.</p>
+<hr />
+</div>
+<div id="when-to-use-sd-se-ci" class="section level3">
+<h3>When to use SD, SE, CI</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Measure</th>
+<th>What it tells you</th>
+<th>When to use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SD</td>
+<td>Spread of raw data</td>
+<td>Understanding variability</td>
+</tr>
+<tr class="even">
+<td>SE</td>
+<td>Precision of the mean</td>
+<td>Comparing sample means</td>
+</tr>
+<tr class="odd">
+<td>95% CI</td>
+<td>Range of true mean</td>
+<td>Reporting uncertainty</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="visual-comparison" class="section level3">
+<h3>Visual comparison</h3>
+<p>The code below may seem daunting but we’ll cover <code>ggplot</code> in more detail later. For now, just notice the way in which plots can be built in this system by adding elements and using consistent language.</p>
+<pre class="r"><code>set.seed(123)
+x &lt;- rnorm(30, mean = 40, sd = 5)
+
+mean_x &lt;- mean(penguins_clean$body_mass_g)
+sd_x &lt;- sd(penguins_clean$body_mass_g)
+se_x &lt;- sd_x / sqrt(length(penguins_clean$body_mass_g))
+ci_x &lt;- c(mean_x - 1.96*se_x, mean_x + 1.96*se_x)
+
+
+# Create a data frame for plotting whiskers
+plot_df &lt;- data.frame(
+  measure = c(&quot;SD&quot;, &quot;SE&quot;, &quot;95% CI&quot;),
+  lower = c(mean_x - sd_x, mean_x - se_x, ci_x[1]),
+  upper = c(mean_x + sd_x, mean_x + se_x, ci_x[2])
+)
+
+# Plot
+ggplot(plot_df, aes(x = measure)) +
+  geom_point(aes(y = mean_x), size = 3, color = &quot;blue&quot;) +          # Mean as point
+  geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.2, color = &quot;red&quot;) +
+  labs(title = &quot;Mean with SD, SE, and 95% CI Whiskers&quot;,
+       y = &quot;Body mass (g)&quot;, x = &quot;Measure&quot;) +
+  theme_minimal() +
+  geom_hline(yintercept = mean_x, linetype = &quot;dashed&quot;, color = &quot;blue&quot;) +
+    # Annotations
+  annotate(&quot;text&quot;, x = 2.3, y = mean_x[1], 
+           label = &quot;SD = data spread \n around mean&quot;, color = &quot;black&quot;, size = 3.5, hjust = 0.5) +
+  annotate(&quot;text&quot;, x = 3.4, y = mean_x[1], 
+           label = &quot;SE = accuracy \n of mean \n estimate&quot;, color = &quot;black&quot;, size = 3.5, hjust = 0.5) +
+  annotate(&quot;text&quot;, x = 1.4, y = mean_x[1], 
+           label = &quot;95% CI = likely \n range for true mean&quot;, color = &quot;black&quot;, size = 3.5, hjust = 0.5) +
+  
+  annotate(&quot;text&quot;, x = 0.5, y = mean_x + 50, label = &quot;Mean&quot;, color = &quot;blue&quot;, hjust = 0)</code></pre>
+<p><img src="/r-for-nervous-humans/stats_intro/module-4/module-4_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>You’ll notice that these estimates are for all penguins. This might be an issue…</p>
+</div>
+<div id="summarising-by-species" class="section level3">
+<h3>Summarising by species</h3>
+<p>Before we start comparing penguins’ measurements statistically, it helps to look at each group separately. Why? Because treating all penguins as one giant lump ignores the fact that there may be important differences between species.</p>
+<p>Summarising by group lets us see patterns and differences visually and numerically, which is exactly what statisticians do before running formal tests.</p>
+<p>Let’s calculate the mean bill length for each species:</p>
+<pre class="r"><code>tapply(penguins_clean$bill_length_mm,
+       penguins_clean$species,
+       function(x) mean(x, na.rm = TRUE))</code></pre>
+<pre><code>##    Adelie Chinstrap    Gentoo 
+##  38.79139  48.83382  47.50488</code></pre>
+<p>What’s happening here:
+1. <code>tapply()</code> splits the data into groups — here, by species.
+2. The anonymous function <code>function(x) mean(x, na.rm = TRUE)</code> calculates the mean of each group, ignoring missing values.
+3. The result is a small summary table showing average bill length per species.</p>
+<p>You can also summarise multiple statistics at once:</p>
+<pre class="r"><code>aggregate(bill_length_mm ~ species, data = penguins_clean, 
+          FUN = function(x) c(mean = mean(x), sd = sd(x), n = length(x)))</code></pre>
+<pre><code>##     species bill_length_mm.mean bill_length_mm.sd bill_length_mm.n
+## 1    Adelie           38.791391          2.663405       151.000000
+## 2 Chinstrap           48.833824          3.339256        68.000000
+## 3    Gentoo           47.504878          3.081857       123.000000</code></pre>
+<p>Now we get the mean and SD for bill length and sample size per species in one glance. This gives a preview of what later t-tests or ANOVAs will formally test.</p>
+<p>Let’s adjust that plot from earlier…</p>
+<p><img src="/r-for-nervous-humans/stats_intro/module-4/module-4_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+</div>
+<div id="intuition-check" class="section level3">
+<h3>Intuition check:</h3>
+<ul>
+<li>Compare the means across species: are they very different?</li>
+<li>Look at the SDs: which species’ measurements are more variable?</li>
+<li>Notice the sample size: smaller groups give less precise estimates (we’ll see this in SE and CI).</li>
+</ul>
+<p>By summarising by species, we’re building a clear picture of the data landscape. Later, when we run statistical tests, we’ll already have a solid understanding of our data.</p>
+</div>
+<div id="lessons-learned" class="section level3">
+<h3>Lessons learned</h3>
+<ul>
+<li>Mean is central for later tests</li>
+<li>Median shows the middle value</li>
+<li>SD measures spread of data</li>
+<li>SE measures precision of the mean</li>
+<li>95% CI gives a plausible range for the true mean</li>
+<li>Plotting these together helps visualize differences</li>
+<li>Always summarise groups separately before testing</li>
+</ul>
+<div style="margin-top: 2rem; display: flex; justify-content: space-between;">
+<p><a href="/r_for_nervous_humans/intro_stats/module-3/" 
+     style="padding: 0.6rem 1.2rem; 
+            background-color: var(--theme-accent); 
+            color: var(--theme-fg); 
+            text-decoration: none; 
+            border-radius: 6px;">
+← Previous
+</a></p>
+<p><a href="/r_for_nervous_humans/intro_stats/module-5/" 
+     style="padding: 0.6rem 1.2rem; 
+            background-color: var(--theme-accent); 
+            color: var(--theme-fg); 
+            text-decoration: none; 
+            border-radius: 6px;">
+Next →
+</a></p>
+</div>
+</div>
+</div>

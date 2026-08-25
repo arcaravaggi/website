@@ -1,0 +1,11 @@
+# Ignore built static files (since they go to your public repo)
+/public/
+/resources/
+/.hugo_build.lock
+
+# Ignore R & RMarkdown artifacts
+.Rproj.user
+.Rhistory
+.RData
+*_cache/
+*_files/

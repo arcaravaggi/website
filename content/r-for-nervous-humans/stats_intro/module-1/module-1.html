@@ -1,0 +1,144 @@
+---
+title: "Module 1: Getting Started"
+type: "page"
+---
+
+
+
+<!-- Dropdown for modules -->
+<p><select id="module-select" class="course-dropdown" onchange="if (this.value) window.location.href=this.value;">
+<option value="">Jump to a module…</option>
+<option value="/r_for_nervous_humans/stats_intro//module-2/">Data &amp; Penguins</option>
+<option value="/r_for_nervous_humans/stats_intro//module-3/">Visualisation</option>
+<option value="/r_for_nervous_humans/stats_intro//module-4/">Descriptive Statistics</option>
+<option value="/r_for_nervous_humans/stats_intro//module-5/">Are These Groups Different?</option>
+<option value="/r_for_nervous_humans/stats_intro//module-6/">Working with Categories</option>
+<option value="/r_for_nervous_humans/stats_intro//module-7/">When Data Gets Weird</option>
+<option value="/r_for_nervous_humans/stats_intro//module-8/">Relationships Between Variables</option>
+<option value="/r_for_nervous_humans/stats_intro//module-9/">Linear Regression</option>
+</select></p>
+<div id="welcome-to-module-1" class="section level3">
+<h3>Welcome to Module 1</h3>
+<p>Ah, R. Some people see it and panic slightly, like a squirrel in a room full of rocking chairs. Fear not. Here, we take things one small step at a time.By the end of this module, you will be able to:</p>
+<ul>
+<li>Open R (or Posit Cloud) and run code<br />
+</li>
+<li>Understand what a variable is</li>
+<li>Do basic arithmetic and store the results<br />
+</li>
+<li>Do</li>
+</ul>
+<hr />
+</div>
+<div id="your-r-environment" class="section level3">
+<h3>Your R environment</h3>
+<div id="option-1-posit-cloud" class="section level4">
+<h4>Option 1: Posit Cloud</h4>
+<p>Run R in the cloud. I don’t recommend this long-term but it’s a decent option to get you up-and-running quickly.</p>
+<ol style="list-style-type: decimal">
+<li>Go to <a href="https://posit.cloud">https://posit.cloud</a><br />
+</li>
+<li>Create a free account<br />
+</li>
+<li>Start a new R project<br />
+</li>
+<li>Copy the code from this course and watch the magic happen</li>
+</ol>
+</div>
+<div id="option-2-r-on-your-own-computer" class="section level4">
+<h4>Option 2: R on your own computer</h4>
+<ol style="list-style-type: decimal">
+<li>Install <a href="https://cran.r-project.org/">R</a><br />
+</li>
+<li>Install <a href="https://posit.co/download/rstudio-desktop/">RStudio</a><br />
+</li>
+<li>Open RStudio<br />
+</li>
+<li>Copy the code and enjoy the results</li>
+</ol>
+<p>RStudio is your <em>Graphical User Interface</em> (GUI) to R. Think of it like this: R is the engine, RStudio is the - not engine bits of the car. The bits that allow you to actually use the engine to do something useful. I don’t know, I don’t get cars.</p>
+<p>RStudio has four main panes:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Source (top-left)</strong> – where you write scripts<br />
+</li>
+<li><strong>Console (bottom-left)</strong> – where R executes code<br />
+</li>
+<li><strong>Environment / History (top-right)</strong> – shows variables and what you’ve done<br />
+</li>
+<li><strong>Files / Plots / Packages (bottom-right)</strong> – your tools, graphs, and data</li>
+</ol>
+<p>It’s important to understand that you can only save code written in your Source pane.</p>
+<hr />
+</div>
+</div>
+<div id="opening-a-script" class="section level2">
+<h2>Opening a script</h2>
+<ol style="list-style-type: decimal">
+<li>Open RStudio<br />
+</li>
+<li>Go to <strong>File → New File → R Script</strong><br />
+</li>
+<li>A new blank tab appears in the <strong>Source pane</strong><br />
+</li>
+<li>Type your code here</li>
+</ol>
+<p>Scripts are like notebooks — you can save them, edit them, and re-run lines anytime.</p>
+<hr />
+</div>
+<div id="running-code" class="section level2">
+<h2>Running code</h2>
+<ul>
+<li>Place your <strong>cursor anywhere on the line</strong> you want to run<br />
+</li>
+<li>Press <strong>Ctrl + Enter</strong> (Windows/Linux) or <strong>Cmd + Enter</strong> (Mac)<br />
+</li>
+<li>R will execute that line and show the result in the <strong>Console pane</strong></li>
+</ul>
+<p>Tip: You can select multiple lines and run them all at once.</p>
+<hr />
+<div id="first-tiny-spells-arithmetic" class="section level3">
+<h3>First tiny spells (arithmetic)</h3>
+<p>In R, you can do simple math, like this:</p>
+<pre class="r"><code>2 + 3
+5 * 10
+10 / 2</code></pre>
+<p>Hit CTRL+Enter after each line. Observe what R tells you. R always tells you the answer; but does it remember it?</p>
+<hr />
+<div id="variables-little-boxes-for-numbers" class="section level4">
+<h4>Variables: little boxes for numbers</h4>
+<p>Variables let you store a value for later. Imagine tiny boxes labeled with names like <code>x</code> or <code>y</code> and your values are contained in those boxes.</p>
+<p>Run this code and see what happens. Rmember to look in your Global Environment, which is where variables are stored.</p>
+<pre class="r"><code>x &lt;- 10
+y &lt;- 5
+z &lt;- x + y
+z</code></pre>
+<pre><code>## [1] 15</code></pre>
+<p>Note the &lt;- symbol. This is the assignment arrow. It allows you to store the thing on the right as the thing on the left.</p>
+<p>Explanation:
+* x &lt;- 10 puts the value 10 into box x
+* y &lt;- 5 puts the value 5 into box y
+* z &lt;- x + y adds them and stores in box z
+* Typing z shows the result</p>
+<p>Exercise: Change the numbers in <code>x</code> and <code>y</code>. What does <code>z</code> become?</p>
+<hr />
+</div>
+</div>
+<div id="lessons-learned" class="section level3">
+<h3>Lessons learned</h3>
+<ul>
+<li><p>R executes code line by line</p></li>
+<li><p>&lt;- is the assignment arrow, putting values in boxes</p></li>
+<li><p>Variables can be used in calculations</p></li>
+<li><p>Experiment — that’s the fastest way to learn</p>
+<p><a href="/r_for_nervous_humans/stats_intro//module-2/" 
+   style="padding: 0.6rem 1.2rem; 
+          background-color: var(--theme-accent); 
+          color: var(--theme-fg); 
+          text-decoration: none; 
+          border-radius: 6px;">
+Next →
+</a></p>
+</div></li>
+</ul>
+</div>
+</div>
