@@ -15,8 +15,7 @@ output:
 
 There is a particular note of despair reserved for the moment your R console turns red and says something annoyingly cryptic and full of symbols. You did not ask for this and yet here you are, at half past midnight, trying to decipher ideographs the way ancient priests once read the entrails of a goat, hoping the gods will explain themselves.
 
-Good news: there is now a small, patient, tirelessly polite robot whose entire purpose is to read the entrails for you. It's called **aideR**, it lives in your RStudio toolbar, and this post covers what
-it does, how to install it, and two bugs that were (and I say this with the full weight of professional shame) extremely funny in hindsight.
+Good news: there is now a small robot whose entire purpose is to read the entrails for you. It's called **aideR**, it lives in your RStudio toolbar, and this post covers what it does, how to install it, and two bugs that should be kept in mind when using it.
 
 ## What is it, actually?
 
@@ -31,27 +30,26 @@ No copy-pasting your traceback into a browser tab. No re-explaining, for the for
 
 ## Why this exists
 
-A large chunk of teaching R statistics isn't "here is the ANOVA function". It's "why has your ANOVA function just erupted in a language that suggests that R is doing this on purpose, possibly out of spite" Office hours are finite but error messages, dishearteningly, are not. aideR exists to narrow that gap a little, without anyone needing to book a slot in my calendar or perform an elaborate email ritual.
+A large chunk of teaching R statistics isn't "here is the ANOVA function". It's "why has your ANOVA function just erupted in a language that suggests that R is doing this on purpose, possibly out of spite" Office hours are finite but error messages are not. aideR exists to narrow that gap a little.
 
-That said, it's worth being blunt about something since I've watched it happen. I've had students hand in work where the AI got the stats flat wrong and they had no way of knowing, because they'd never learned enough R or enough statistics to spot it. That's not a hypothetical risk, it's a thing that's already occurred, and it's here's the danger: a tool that explains things well enough is also a tool convincing enough to be believed when it's wrong. aideR is built to explain the code you've selected, not to replace the years of actually learning why a Type II error matters or when a mixed model is the wrong choice. You still need enough R in your own head to recognise when it's talking nonsense, the same way you'd need to actually know French before you could catch a bad translation. If the only thing you ever do is ask, you'll never build the instinct that tells you when the answer is wrong. That instinct is the entire point of your studies.
+That said, it's worth being blunt about something since I've watched it happen several times. I've had students hand in work where the AI got the stats flat wrong and they had no way of knowing, because they'd never learned enough R or enough statistics to spot it. A tool that explains things well enough is also a tool convincing enough to be believed when it's wrong. aideR is built to explain the code you've selected, not to replace the years of actually learning why a Type II error matters or when a mixed model is the wrong choice. You still need enough R in your own head to recognise when it's talking nonsense, the same way you'd need to actually know French before you could catch a bad translation. If the only thing you ever do is ask, you'll never build the skills to identify when the answer is wrong. 
 
 ## A quick word on the ethics of this, because someone will ask
 
-I am not going to stand here and tell you that whether or not students should use AI is a settled question, because it isn't. Anyone who tells you otherwise is generally trying to sell you something. There are real arguments worth taking seriously: that leaning on AI for explanations can quietly hollow out the productive struggle where actual learning lives, that it can erode the skill of debugging your own thinking, that it complicates what originality and authorship even mean once you hand in the assignment, and more besides.
+I am not going to stand here and tell you that whether or not students should use AI is a settled question, because it isn't. Anyone who tells you otherwise is generally trying to sell you something. There are real arguments worth taking seriously. Leaning on AI for explanations can quietly hollow out the productive struggle where actual learning lives. It can erode the skill of debugging your own thinking. It complicates what originality and authorship even mean once you hand in the assignment. And that's just for starters.
 
-I take all of that seriously. I also teach actual students in the actual year 2026, and the unglamorous truth is that they are already using AI. It's not a dystopic possibility. Somewhere, someone is pasting error messages into whatever chat window happens to be open in another tab, with roughly the guidance and oversight of a toddler operating a forklift. Pretending otherwise doesn't protect anyone's learning. It just guarantees the only model they get is vibes and whatever the tool feels like improvising that day, with no one in the room who actually understands statistics to steer it.
+I take all of that seriously. I also teach actual students in the actual year 2026, and of course they're already using AI. Somewhere, someone is pasting error messages into whatever chat window happens to be open in another tab, with roughly the guidance and oversight of a toddler operating a forklift. Pretending otherwise doesn't protect anyone's learning, it just guarantees the only guidance they get is vibes and whatever the tool feels like improvising that day, with no one in the room who actually understands statistics to steer it.
 
-So my position, as someone who has to stand up in front of a lecture theatre and mean it, is that if this is happening regardless (and it is, with the quiet inevitability of a Monday) then I'd rather it happen properly. That's the entire idea behind aideR. It doesn't write analyses or generate assignments. It's scoped narrowly to explaining code you've already selected and debugging errors you've already summoned, because that's the moment a good explanation accelerates learning instead of replacing it. I'm trying to make sure that when students do reach for AI, that they're reaching for something that shows its working and helps them develop.
+So my position, as someone who has to stand up in front of a lecture theatre and mean it, is that if this is happening regardless (and it is, with the quiet inevitability of a Monday) then I'd rather it happen properly. That's the entire idea behind aideR. It's scoped narrowly to explaining code you've already selected and debugging errors you've already summoned, because that's the moment a good explanation accelerates learning instead of replacing it. I'm trying to make sure that when students do reach for AI, that they're reaching for something that shows its working and helps them develop.
 
 ### And yes, about the Google of it all
 
-The irony of a man who has spent aconsiderable amount of effort de-Googling his life - that's me, by the way - turning around and building a teaching tool that phones home to `generativelanguage.googleapis.com` on every single call is not lost on me. I have made my peace with it, in the manner of someone who has made peace with a slightly disreputable relative. That is, reluctantly and with conditions attached.
+The irony of a man who has spent aconsiderable amount of effort de-Googling his life - that's me, by the way - turning around and building a teaching tool that phones home to the Gemini API on every single call is not lost on me. I have made my peace with it, in the manner of someone who has made peace with a disreputable relative. That is, reluctantly and with conditions attached.
 
-The honest reasoning is unglamorous: Gemini's free tier is, as of writing, the most generous, most reliable, no-card-required option going, and "most generous and reliable" matters a lot when the
-people relying on it are students who have never set an environment variable in their lives and do not need a rate-limit error added to the pile of things going wrong at 11pm before a deadline. Principle
-is important. So is not making first-years debug a 429 on top of everything else.
+The honest reasoning is that Gemini's free tier is, as of writing as as far as I could discern, the most generous, most reliable, no-card-required option going, and "most generous and reliable" matters a lot when the people relying on it are students who have never set an environment variable in their lives and do not need a rate-limit error added to the pile of things going wrong at 11pm before a deadline. Principle
+is important. So is not making students debug a 429 on top of everything else.
 
-But make no mistake - this is exactly the sort of arrangement you should feel entitled to be suspicious of. Not because anything sinister is afoot, but because "free" is a transaction, not a gift, and the terms are the terms whether or not anyone reads them. This means that anything sent through the free tier may be used by Google to improve its models and may be read by an actual human reviewer at some point. So keep the sensitive stuff off the free tier. Happily, `call_gemini()` also takes a `model` argument rather than being welded to one company's API, so if you'd rather route it through Groq or OpenRouter instead (both with their own perfectly respectable free tiers, and rather fewer feelings about your search history) that's a small function edit away, not a rewrite. Convenience got us here first. It doesn't have to keep us here.
+But let's be clear - this is exactly the sort of arrangement you should feel suspicious of. Not because anything sinister is afoot, but because "free" is a transaction, not a gift, and the terms are the terms whether or not anyone reads them or not. This means that anything sent through the free tier may be used by Google to improve its models and may be read by an actual human reviewer at some point. So keep the sensitive stuff off the free tier. Happily, `call_gemini()` also takes a `model` argument rather than being welded to one company's API, so if you'd rather route it through Groq or OpenRouter instead (both with their own perfectly respectable free tiers, and rather fewer feelings about your search history) that's a small function edit away, not a rewrite. Convenience got us here first. It doesn't have to keep us here.
 
 ## Installing aideR
 
@@ -62,8 +60,7 @@ remotes::install_github("arcaravaggi/aideR")
 
 ## First-time setup: getting your own free API key
 
-Note the operative word: **your own**. aideR runs on Google's Gemini API, which has a genuinely free tier but that quota is per key, which means if an entire class points itself at one shared key, you will
-exhaust the daily allowance somewhere around the third student's first "please explain this `for` loop," and the rest of the cohort will be left staring at a 429 error like a queue at a bakery that's just sold its last cinnamon bun.
+Note the operative phrase: *your own*. aideR runs on Google's Gemini API, which has a free tier but that quota is per key, which means if an entire class points itself at one shared key, you will exhaust the daily allowance somewhere around the third student's first "please explain this `for` loop," and the rest of the cohort will be left staring at a 429 error like a queue at a bakery that's just sold its last cinnamon bun.
 
 So, everyone gets their own:
 
@@ -81,7 +78,7 @@ Select some code that's confusing you then either:
 - Open **Tools > Addins > Browse Addins**, find **"aideR Menu"**, and click it like a civilised person, or
 - Bind it to a keyboard shortcut once (see below) and never open that menu again as long as you live
 
-You'll get a small menu, politely waiting for instructions like a search engine from a more innocent era, before it also wanted to sell you everything:
+You'll get a small menu, politely waiting for instructions:
 
 ```
 Select AI Task:
@@ -99,8 +96,7 @@ Pick one, wait a couple of seconds, and the explanation lands straight in your c
 
 ### Setting a keyboard shortcut (do this now, not later)
 
-RStudio, quite sensibly, does not let any package silently claim a keyboard shortcut the instant it's installed. Imagine every package you've ever added to your machine engaging in a Battle Royale-style
-fight over `Ctrl+Shift+A`. So this bit is manual, and it's a one-time job:
+RStudio, quite sensibly, does not let any package silently claim a keyboard shortcut the instant it's installed. So this bit is manual, and it's a one-time job:
 
 1. **Tools > Addins > Browse Addins…**
 2. Click **Keyboard Shortcuts** (top right)
@@ -108,8 +104,7 @@ fight over `Ctrl+Shift+A`. So this bit is manual, and it's a one-time job:
 4. Click the shortcut field, press your combo of choice
 5. **Apply**
 
-After this, it's select-code-then-mash-shortcut for the rest of your natural working life. Or the next couple of hours at least. Do it now. Future-you will thank you. But then future-you will
-forget that this blog post exists, so do you really owe them anything? They're just coasting on your hard work.
+After this, it's select-code-then-mash-shortcut for the rest of your natural working life. Or the next couple of hours at least. Do it now; future-you will thank you. But then future-you will forget that this blog post exists, so do you really owe them anything? They're just coasting on your hard work.
 
 ## Two cautionary tales, in the grand tradition of cautionary tales
 
@@ -149,7 +144,7 @@ Run this the moment `call_gemini()` 404s on you and it will tell you exactly whi
 | `call_gemini(prompt)` | Raw access (send any prompt, get text back) |
 | `list_gemini_models()` | See what model names currently work, before they inevitably change again |
 
-## Give it a go
+## It might just work...
 
 Install it, run `setup_gemini_key()`, select something baffling, and hit your new shortcut. If Google renames the model again next week (likely) `list_gemini_models()` has you covered.
 
