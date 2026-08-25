@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blog on </title>
-    <link>http://localhost:1313/categories/blog/</link>
+    <link>https://arcaravaggi.github.io/categories/blog/</link>
     <description>Recent content in Blog on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://arcaravaggi.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>aideR: Using AI Anyway, But Doing It Properly</title>
-      <link>http://localhost:1313/posts/2026-08-25-introducing-aider/</link>
+      <link>https://arcaravaggi.github.io/posts/2026-08-25-introducing-aider/</link>
       <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2026-08-25-introducing-aider/</guid>
+      <guid>https://arcaravaggi.github.io/posts/2026-08-25-introducing-aider/</guid>
       <description>&lt;p&gt;There is a particular note of despair reserved for the moment your R
 console turns red and says something annoyingly cryptic and full of
 symbols. You did not ask for this and yet here you are, at half past
@@ -26,9 +26,9 @@ weight of professional shame) extremely funny in hindsight.&lt;/p&gt;</descripti
     </item>
     <item>
       <title>Analysing Respondent Attitudes from Surveys in R</title>
-      <link>http://localhost:1313/posts/2026-05-29-survey_analysis/</link>
+      <link>https://arcaravaggi.github.io/posts/2026-05-29-survey_analysis/</link>
       <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2026-05-29-survey_analysis/</guid>
+      <guid>https://arcaravaggi.github.io/posts/2026-05-29-survey_analysis/</guid>
       <description>&lt;p&gt;Wildlife management decisions are rarely settled by ecological data
 alone. They live or die in the messy human world of competing values.
 Understanding what people think and why is as much a scientific skill as
@@ -46,9 +46,9 @@ residents and a genuine conservation priority.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Generate Random Sampling Points by Minimum Distance</title>
-      <link>http://localhost:1313/posts/2026-03-25-points_by_min_distance/</link>
+      <link>https://arcaravaggi.github.io/posts/2026-03-25-points_by_min_distance/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2026-03-25-points_by_min_distance/</guid>
+      <guid>https://arcaravaggi.github.io/posts/2026-03-25-points_by_min_distance/</guid>
       <description>&lt;h1 class=&#34;title toc-ignore&#34;&gt;Generate Random Sampling Points by Minimum
 Distance&lt;/h1&gt;
 &lt;h4 class=&#34;author&#34;&gt;Anthony Caravaggi&lt;/h4&gt;
