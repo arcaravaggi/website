@@ -2,12 +2,15 @@
 title: "aideR: Using AI Anyway, But Doing It Properly"
 author: "Anthony Caravaggi"
 date: 2026-08-25
-tags: ["r", "rstudio", "ai", "teaching"]
-categories: ["Blog"]
+categories:
+  - "Blog"
+tags:
+  - "r"
+  - "rstudio"
+  - "ai"
+  - "teaching"
 draft: false
 output:
-  html_fragment:
-    self_contained: false
   md_document:
     variant: gfm
     preserve_yaml: true

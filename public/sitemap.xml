@@ -3,34 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://arcaravaggi.github.io/posts/</loc>
-    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://arcaravaggi.github.io/teaching/</loc>
   </url><url>
     <loc>https://arcaravaggi.github.io/contact/</loc>
   </url><url>
-    <loc>https://arcaravaggi.github.io/posts/2026-05-29-survey_analysis/</loc>
-    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+    <loc>https://arcaravaggi.github.io/tags/ai/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arcaravaggi.github.io/posts/2026-08-25-introducing-aider/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://arcaravaggi.github.io/categories/blog/</loc>
-    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://arcaravaggi.github.io/categories/</loc>
-    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://arcaravaggi.github.io/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arcaravaggi.github.io/tags/r/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arcaravaggi.github.io/tags/rstudio/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arcaravaggi.github.io/tags/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arcaravaggi.github.io/tags/teaching/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arcaravaggi.github.io/posts/2026-05-29-survey_analysis/</loc>
     <lastmod>2026-05-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://arcaravaggi.github.io/tags/questionnaire/</loc>
     <lastmod>2026-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://arcaravaggi.github.io/tags/r/</loc>
-    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://arcaravaggi.github.io/tags/social-science/</loc>
-    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://arcaravaggi.github.io/tags/</loc>
     <lastmod>2026-05-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://arcaravaggi.github.io/projects/</loc>
@@ -208,8 +220,6 @@
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://arcaravaggi.github.io/about/</loc>
-  </url><url>
-    <loc>https://arcaravaggi.github.io/posts/2026-08-25-introducing-aider/</loc>
   </url><url>
     <loc>https://arcaravaggi.github.io/r-for-nervous-humans/stats_intro/module-1/</loc>
   </url><url>
