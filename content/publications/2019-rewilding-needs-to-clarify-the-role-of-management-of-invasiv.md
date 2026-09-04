@@ -7,7 +7,7 @@ authors = ['Hayward, Matt', 'Jachowski, DS', 'Shuttleworth, Craig', 'Linnell, JD
 journal = "Science"
 year = 2019
 pages = "6438"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.5465/amproc.2025.24240abstract"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Hayward, M., Jachowski, D., Shuttleworth, C., Linnell, J., Allen, B., Griffen, A., Montgomery, R., Caravaggi, A., Weise, F., Moehrenschlager, A., others (2019). Rewilding needs to clarify the role of management of invasive species. Science."""
 bibtex = """@article{hayward2019rewilding,

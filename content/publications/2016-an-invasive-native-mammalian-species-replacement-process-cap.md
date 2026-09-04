@@ -7,7 +7,7 @@ authors = ["Caravaggi, Anthony", "Zaccaroni, Marco", "Riga, Francesco", "Schai-B
 journal = "Remote Sensing in Ecology and Conservation"
 year = 2016
 pages = "45-58"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1002/rse2.11"
 pdf = "/publications/"
 
 audio = ""
@@ -16,7 +16,9 @@ news = ""
 data = ""
 infographic = ""
 
-apa = "Caravaggi, A., Zaccaroni, M., Riga, F., Schai-Braun, S. C., Dick, J. T., Montgomery, W. I., Reid, N. (2016). An invasive-native mammalian species replacement process captured by camera trap survey random encounter models. Remote Sensing in Ecology and Conservation."
+summary = """AbstractCamera traps are used to estimate densities or abundances using capture‐recapture and, more recently, random encounter models (REMs). We deploy REMs to describe an invasive‐native species replacement process, and to demonstrate their wider application beyond abundance estimation. The Irish hare Lepus timidus hibernicus is a high priority endemic of conservation concern. It is threatened by an expanding population of nonnative, European hares L. europaeus, an invasive species of global importance. Camera traps were deployed in thirteen 1 km squares, wherein the ratio of invader to native densities were corroborated by night‐driven line transect distance sampling throughout the study area of 1652 km2. Spatial patterns of invasive and native densities between the invader's core and peripheral ranges, and native allopatry, were comparable between methods. Native densities in the peripheral range were comparable to those in native allopatry using REM, or marginally depressed using Distance Sampling. Numbers of the invader were substantially higher than the native in the core range, irrespective of method, with a 5:1 invader‐to‐native ratio indicating species replacement. We also describe a post hoc optimization protocol for REM which will inform subsequent (re‐)surveys, allowing survey effort (camera hours) to be reduced by up to 57% without compromising the width of confidence intervals associated with density estimates. This approach will form the basis of a more cost‐effective means of surveillance and monitoring for both the endemic and invasive species. The European hare undoubtedly represents a significant threat to the endemic Irish hare."""
 
-bibtex = "@article{caravaggi2016invasive, author={Caravaggi, Anthony and Zaccaroni, Marco and Riga, Francesco and Schai-Braun, Stéphanie C and Dick, Jaimie TA and Montgomery, W Ian and Reid, Neil}, journal={Remote Sensing in Ecology and Conservation}, number={1}, pages={45-58}, title={An invasive-native mammalian species replacement process captured by camera trap survey random encounter models}, volume={2}, year={2016}}"
+apa = """Caravaggi, A., Zaccaroni, M., Riga, F., Schai-Braun, S. C., Dick, J. T., Montgomery, W. I., Reid, N. (2016). An invasive-native mammalian species replacement process captured by camera trap survey random encounter models. Remote Sensing in Ecology and Conservation."""
+
+bibtex = """@article{caravaggi2016invasive, author={Caravaggi, Anthony and Zaccaroni, Marco and Riga, Francesco and Schai-Braun, Stéphanie C and Dick, Jaimie TA and Montgomery, W Ian and Reid, Neil}, journal={Remote Sensing in Ecology and Conservation}, number={1}, pages={45-58}, title={An invasive-native mammalian species replacement process captured by camera trap survey random encounter models}, volume={2}, year={2016}}"""
 +++

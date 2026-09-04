@@ -7,7 +7,7 @@ authors = ["Caravaggi, Anthony", "Bayley, Sam", "Facey, Richard J", "de la Hera,
 journal = "Ringing & Migration"
 year = 2021
 pages = "9--17"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1080/03078698.2022.2050937"
 pdf = "/publications/"
 
 audio = ""
@@ -16,7 +16,9 @@ news = ""
 data = ""
 infographic = ""
 
-apa = "Caravaggi, A., Bayley, S., Facey, R. J., de la Hera, I., Shewring, M. P., Smith, J. A. (2021). The long and short of it: converting between maximum and minimum tarsus measurements in passerine birds. Ringing & Migration."
+summary = """No summary available."""
 
-bibtex = "@article{caravaggi2021long, author={Caravaggi, Anthony and Bayley, Sam and Facey, Richard J and de la Hera, Iván and Shewring, Mike P and Smith, Jez A}, journal={Ringing & Migration}, number={1}, pages={9--17}, publisher={Taylor & Francis}, title={The long and short of it: converting between maximum and minimum tarsus measurements in passerine birds}, volume={36}, year={2021}}"
+apa = """Caravaggi, A., Bayley, S., Facey, R. J., de la Hera, I., Shewring, M. P., Smith, J. A. (2021). The long and short of it: converting between maximum and minimum tarsus measurements in passerine birds. Ringing & Migration."""
+
+bibtex = """@article{caravaggi2021long, author={Caravaggi, Anthony and Bayley, Sam and Facey, Richard J and de la Hera, Iván and Shewring, Mike P and Smith, Jez A}, journal={Ringing & Migration}, number={1}, pages={9--17}, publisher={Taylor & Francis}, title={The long and short of it: converting between maximum and minimum tarsus measurements in passerine birds}, volume={36}, year={2021}}"""
 +++

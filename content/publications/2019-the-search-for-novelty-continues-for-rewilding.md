@@ -7,7 +7,7 @@ authors = ['Hayward, Matt W', 'Jachowski, David S', 'Bugir, Cassandra K', 'Clulo
 journal = ""
 year = 2019
 pages = ""
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1016/j.biocon.2019.05.041"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Hayward, M. W., Jachowski, D. S., Bugir, C. K., Clulow, J., Krishnamurthy, R., Griffin, A. S., Chalmers, A. C., Linnell, J. D., Montgomery, R. A., Somers, M. J., others (2019). The search for novelty continues for rewilding. ."""
 bibtex = """@article{hayward2019search,

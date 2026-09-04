@@ -7,7 +7,7 @@ authors = ['Caravaggi, Anthony']
 journal = "The Journal of Open Source Software"
 year = 2017
 pages = ""
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.21105/joss.00176"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Caravaggi, A. (2017). remBoot: An R package for Random Encounter Modelling. The Journal of Open Source Software."""
 bibtex = """@article{caravaggi2017remboot,

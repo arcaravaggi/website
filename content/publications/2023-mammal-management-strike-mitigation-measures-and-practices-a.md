@@ -17,7 +17,7 @@ news = ""
 data = "https://figshare.com/articles/dataset/Mammal_management_practices_at_airfields_in_Europe/20505480"
 infographic = ""
 
-summary = "Airfields attract many types of wildlife, and collisions with aircraft are increasing worldwide. A survey of 22 European airfields found mammals present at all sites, with foxes and rabbits most common. Habitats like heathland or peatland increased mammal diversity. Fencing and grass management were widely used to reduce strikes, while controlling water sources was seen as most effective. The study emphasizes that Wildlife Hazard Management Plans should combine multiple strategies and be adaptable to the species most likely to cause strikes, helping make airfields safer for both wildlife and aircraft."
+summary = """Airfields attract many types of wildlife, and collisions with aircraft are increasing worldwide. A survey of 22 European airfields found mammals present at all sites, with foxes and rabbits most common. Habitats like heathland or peatland increased mammal diversity. Fencing and grass management were widely used to reduce strikes, while controlling water sources was seen as most effective. The study emphasizes that Wildlife Hazard Management Plans should combine multiple strategies and be adaptable to the species most likely to cause strikes, helping make airfields safer for both wildlife and aircraft."""
 
 apa = """Ball, S., Caravaggi, A., Nicholson, J., Butler, F. (2023). Mammal management: Strike mitigation measures and practices at European airports. Journal of air transport management."""
 bibtex = """@article{ball2023mammal,

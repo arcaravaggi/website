@@ -7,7 +7,7 @@ authors = ['Ball, Samantha', 'Caravaggi, Anthony', 'Butler, Fidelma']
 journal = "Mammal Review"
 year = 2020
 pages = ""
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1111/mam.12241"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """AbstractThe number of reported collisions (i.e. strikes) between aircraft and wildlife is increasing globally, with consequences for personnel and passenger safety as well as for industry economics. These are important considerations for airport operators that are obliged to mitigate wildlife hazards at airfields. Incidents involving mammals account for approximately 3–10% of all recorded strikes. However, relatively little research has been conducted on mammal strikes with aircraft outside of the USA.We collate mammal strike data from six major national aviation authorities and a global aircraft database and review the available scientific and grey literature. We aim to identify which mammal families are involved in strike events and how widespread the issue is on a global scale. We also aim to demonstrate the importance of consistently recording strike instances in national databases.We identified 40 families that were involved in strike events in 47 countries. Reported mammal strike events have been increasing by up to 68% annually. Chiroptera (4 families) accounted for the greatest proportion of strikes in Australia; leporids and canids in Canada, Germany and the UK; and Chiroptera (5 families) and cervids in the USA. More mammals were struck during the landing phase of an aircraft's rotation than any other phase. Circa‐diel strike risk was greatest at dusk and circa‐annum strike risk was greatest during late summer, with some international variation. The total estimated cost of damage resulting from reported mammal strikes exceeded US$103 million in the USA alone, over 30 years.Mammal strikes represent a substantial risk in airfield environments. Monitoring of existing wild mammal populations is required to understand temporal trends in presence, abundance, and activity patterns and to inform management decisions. Increased and accurate reporting of strike events globally is needed to inform Wildlife Hazard Management Plans and support effective strike mitigation."""
 
 apa = """Ball, S., Caravaggi, A., Butler, F. (2020). Runway roadkill: a global review of mammal strikes with aircraft. Mammal Review."""
 bibtex = """@article{ball2020runway,

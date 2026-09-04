@@ -7,7 +7,7 @@ authors = ['Caravaggi, Anthony']
 journal = ""
 year = 2016
 pages = ""
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1007/s10530-010-9849-x"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Caravaggi, A. (2016). Invasion ecology of non-native European brown hares and their impact on the endemic Irish hare. ."""
 bibtex = """@phdthesis{caravaggi2016invasion,

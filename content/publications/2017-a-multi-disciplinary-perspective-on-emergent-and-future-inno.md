@@ -7,7 +7,7 @@ authors = ["Graziotin, Daniel", "Waldner, Francois", "Tennant, Jonathan P", "Gre
 journal = ""
 year = 2017
 pages = ""
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.12688/f1000research.12037.1"
 pdf = "/publications/"
 
 audio = ""
@@ -16,7 +16,9 @@ news = ""
 data = ""
 infographic = ""
 
-apa = "Graziotin, D., Waldner, F., Tennant, J. P., Greshake Tzovaras, B., Ross-Hellauer, T., Dugan, J. M., Renaut, S., Jacques, D. C., Colomb, J., Madan, C. R., others (2017). A multi-disciplinary perspective on emergent and future innovations in peer review."
+summary = """Peer review of research articles is a core part of our scholarly communication system. In spite of its importance, the status and purpose of peer review is often contested. What is its role in our modern digital research and communications infrastructure? Does it perform to the high standards with which it is generally regarded? Studies of peer review have shown that it is prone to bias and abuse in numerous dimensions, frequently unreliable, and can fail to detect even fraudulent research. With the advent of Web technologies, we are now witnessing a phase of innovation and experimentation in our approaches to peer review. These developments prompted us to examine emerging models of peer review from a range of disciplines and venues, and to ask how they might address some of the issues with our current systems of peer review. We examine the functionality of a range of social Web platforms, and compare these with the traits underlying a viable peer review system: quality control, quantified performance metrics as engagement incentives, and certification and reputation. Ideally, any new systems will demonstrate that they out-perform current models while avoiding as many of the biases of existing systems as possible. We conclude that there is considerable scope for new peer review initiatives to be developed, each with their own potential issues and advantages. We also propose a novel hybrid platform model that, at least partially, resolves many of the technical and social issues associated with peer review, and can potentially disrupt the entire scholarly communication system. Success for any such development relies on reaching a critical threshold of research community engagement with both the process and the platform, and therefore cannot be achieved without a significant change of incentives in research environments."""
 
-bibtex = "@article{graziotin2017multi, author={Graziotin, Daniel and Waldner, Francois and Tennant, Jonathan P and Greshake Tzovaras, Bastian and Ross-Hellauer, Tony and Dugan, Jonathan M and Renaut, Sebastien and Jacques, Damien C and Colomb, Julien and Madan, Christopher R and others}, publisher={F1000 Research Ltd}, title={A multi-disciplinary perspective on emergent and future innovations in peer review}, year={2017}}"
+apa = """Graziotin, D., Waldner, F., Tennant, J. P., Greshake Tzovaras, B., Ross-Hellauer, T., Dugan, J. M., Renaut, S., Jacques, D. C., Colomb, J., Madan, C. R., others (2017). A multi-disciplinary perspective on emergent and future innovations in peer review."""
+
+bibtex = """@article{graziotin2017multi, author={Graziotin, Daniel and Waldner, Francois and Tennant, Jonathan P and Greshake Tzovaras, Bastian and Ross-Hellauer, Tony and Dugan, Jonathan M and Renaut, Sebastien and Jacques, Damien C and Colomb, Julien and Madan, Christopher R and others}, publisher={F1000 Research Ltd}, title={A multi-disciplinary perspective on emergent and future innovations in peer review}, year={2017}}"""
 +++

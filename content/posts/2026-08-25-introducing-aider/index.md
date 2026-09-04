@@ -16,7 +16,7 @@ output:
     preserve_yaml: true
 ---
 
-There is a particular note of despair reserved for the moment your R
+There is a particular cry of despair reserved for the moment your R
 console turns red and says something annoyingly cryptic and full of
 symbols. You did not ask for this and yet here you are, at half past
 midnight, trying to decipher ideographs the way ancient priests once
@@ -259,3 +259,44 @@ your new shortcut. If Google renames the model again next week (likely)
 
 Bug reports, feature requests, and “why did it explain my t-test using
 an extended pirate metaphor” reports are all welcome via GitHub Issues.
+
+# Update: For restricted networks and overly zealous IT departments
+
+Not every computer plays nicely with `remotes::install_github()`. If you
+are working on a locked-down institutional machine, operating behind a
+corporate firewall with the trust settings of a toddler guarding a
+half-eaten biscuit, or simply disconnected from the internet, here is
+how to get around the most common hurdles.
+
+## Option 1: Installing from a local zip file
+
+If your network refuses to fetch packages directly from GitHub, you can
+manually download the repository as a .zip file, save it locally, and
+tell R to build it from your drive:
+
+``` r
+install.packages("C:/path/to/yourpackage-main.zip", type = "source")
+```
+
+This bypasses remote fetching entirely by pointing R directly to the
+archive on your local file system.
+
+## Option 2: Bypassing installation entirely
+
+If your institution’s IT permissions are set up to prevent you from
+writing anything into R’s system library (a setting presumably designed
+by someone who regards user autonomy as a serious security risk) you can
+skip the installation step altogether using `devtools` or `pkgload`:
+
+``` r
+devtools::load_all("C:/path/to/yourpackage-main")
+
+# Alternatively
+pkgload::load_all("C:/path/to/yourpackage-main")
+```
+
+Unzip the repository folder somewhere on your machine, point either of
+those functions at the folder path, and R will load all the package’s
+functions directly into memory for your active session. You will need to
+run this command each time you start RStudio, but it completely
+sidesteps administrator restriction errors.

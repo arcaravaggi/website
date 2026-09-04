@@ -7,7 +7,7 @@ authors = ['Caravaggi, Anthony']
 journal = "Encyclopedia of Animal Cognition and Behavior"
 year = 2022
 pages = "3839--3843"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1007/978-3-319-55065-7_1164"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Caravaggi, A. (2022). Lagomorpha Navigation. Encyclopedia of Animal Cognition and Behavior."""
 bibtex = """@incollection{caravaggi2022lagomorpha,

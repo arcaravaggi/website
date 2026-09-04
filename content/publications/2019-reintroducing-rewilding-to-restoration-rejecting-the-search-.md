@@ -7,7 +7,7 @@ authors = ['Hayward, Matt W', 'Scanlon, Robert J', 'Callen, Alexandra', 'Howell,
 journal = "Biological conservation"
 year = 2019
 pages = "255--259"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1016/j.biocon.2019.03.011"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Hayward, M. W., Scanlon, R. J., Callen, A., Howell, L. G., Klop-Toker, K. L., Di Blanco, Y., Balkenhol, N., Bugir, C. K., Campbell, L., Caravaggi, A., others (2019). Reintroducing rewilding to restoration--Rejecting the search for novelty. Biological conservation."""
 bibtex = """@article{hayward2019reintroducing,

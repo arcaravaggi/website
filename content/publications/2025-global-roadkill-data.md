@@ -17,7 +17,7 @@ news = ""
 data = "https://github.com/PORBIOTA/PORBIOTA-ICNF/tree/main/DwC_Creation_Helpers."
 infographic = ""
 
-summary = "Roadkill is a major threat to wildlife and can also cause accidents with social and economic costs. This research compiles 208,570 records of terrestrial vertebrates from 54 countries between 1971 and 2024, combining surveys and other observations. This dataset helps identify high-risk roads, vulnerable species, and populations at risk, while reducing duplicate data collection. By providing a comprehensive resource for researchers and planners, it supports wildlife conservation and safer infrastructure, helping protect animals and reduce the societal and economic impacts of road collisions."
+summary = """Roadkill is a major threat to wildlife and can also cause accidents with social and economic costs. This research compiles 208,570 records of terrestrial vertebrates from 54 countries between 1971 and 2024, combining surveys and other observations. This dataset helps identify high-risk roads, vulnerable species, and populations at risk, while reducing duplicate data collection. By providing a comprehensive resource for researchers and planners, it supports wildlife conservation and safer infrastructure, helping protect animals and reduce the societal and economic impacts of road collisions."""
 
 apa = """Ball, S., Caravaggi, A., Kelly, T. C., Keogh, G., Butler, F. (2025). The wildlife strikes back: determining the secondary strike risk associated with a mammal--aircraft collision. The Journal of Wildlife Management."""
 bibtex = """@article{grilo2025global,

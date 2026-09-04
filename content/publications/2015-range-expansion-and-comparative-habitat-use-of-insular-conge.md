@@ -7,7 +7,7 @@ authors = ['Caravaggi, Anthony', 'Montgomery, W Ian', 'Reid, Neil']
 journal = "Biological Invasions"
 year = 2015
 pages = "687--698"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1007/s10530-014-0759-1"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Caravaggi, A., Montgomery, W. I., Reid, N. (2015). Range expansion and comparative habitat use of insular, congeneric lagomorphs: invasive European hares Lepus europaeus and endemic Irish hares Lepus timidus hibernicus. Biological Invasions."""
 bibtex = """@article{caravaggi2015range,

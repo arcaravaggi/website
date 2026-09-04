@@ -17,6 +17,8 @@ news = ""
 data = ""
 infographic = ""
 
+summary = """No summary available."""
+
 apa = """BALL, S., CARAVAGGI, A., BUTLER, F. (2020). Pistenunf\"alle: eine globale Review von S\"augetierunf\"allen mit Flugzeugen Runway roadkill: a global review of mammal strikes with aircraft. ."""
 bibtex = """@article{ball2020pistenunfalle,
  author = {BALL, Samantha and CARAVAGGI, Anthony and BUTLER, Fidelma},

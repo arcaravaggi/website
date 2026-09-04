@@ -7,7 +7,7 @@ authors = ['Farrell, Sean', 'Noble, PJ-M', 'Pinchbeck, Gina L', 'Brant, Beth', '
 journal = "Preventive veterinary medicine"
 year = 2020
 pages = "104924"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1016/j.prevetmed.2020.104924"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Farrell, S., Noble, P., Pinchbeck, G. L., Brant, B., Caravaggi, A., Singleton, D. A., Radford, A. D. (2020). Seasonality and risk factors for myxomatosis in pet rabbits in Great Britain. Preventive veterinary medicine."""
 bibtex = """@article{farrell2020seasonality,

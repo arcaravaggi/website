@@ -7,7 +7,7 @@ authors = ['Bishop, Nicholas', 'Dalrymple, Thomas', 'Smith, Jeremy A', 'Facey, R
 journal = "Birds in Wales"
 year = 2021
 pages = "44--52"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.5962/p.324009"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Bishop, N., Dalrymple, T., Smith, J. A., Facey, R., Caravaggi, A. (2021). Avocet Recurvirostra avocetta responses to predator activity at Newport Wetland Nature Reserve. Birds in Wales."""
 bibtex = """@article{bishop2021avocet,

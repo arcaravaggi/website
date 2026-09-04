@@ -7,7 +7,7 @@ authors = ['Caravaggi, Anthony', 'Irwin, Sandra', 'Lusby, John', 'McCarthy, Alan
 journal = "Irish Birds"
 year = 2020
 pages = "1--12"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.2173/bow.norhar1.01"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Caravaggi, A., Irwin, S., Lusby, J., McCarthy, A., Mee, A., Nagle, T., O’Halloran, J. (2020). Forest management and Hen Harrier Circus cyaneus conservation in Ireland. Irish Birds."""
 bibtex = """@article{caravaggi2020forest,

@@ -7,7 +7,7 @@ authors = ['Caravaggi, Anthony', 'Plowman, Amy', 'Wright, David J', 'Bishop, Cha
 journal = ""
 year = 2018
 pages = ""
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1638/2016-0019.1"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Caravaggi, A., Plowman, A., Wright, D. J., Bishop, C. (2018). The composition of captive ruffed lemur (Varecia spp.) diets in UK. ."""
 bibtex = """@article{caravaggi2018composition,

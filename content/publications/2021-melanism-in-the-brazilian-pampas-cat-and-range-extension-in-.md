@@ -7,7 +7,7 @@ authors = ['AXIMOFF, IZAR', 'SALES, DIONE', 'PAINKOW, ENNIO', 'BARQUERO, GONZALO
 journal = "Cat News"
 year = 2021
 pages = "29--32"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1007/978-981-13-2538-0_198"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """AXIMOFF, I., SALES, D., PAINKOW, E., BARQUERO, G., ROSA, C., CARAVAGGI, A. (2021). Melanism in the Brazilian pampas cat and range extension in the Atlantic Forest, Brazil. Cat News."""
 bibtex = """@article{aximoff2021melanism,

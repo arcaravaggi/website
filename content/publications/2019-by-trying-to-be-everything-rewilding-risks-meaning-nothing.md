@@ -7,7 +7,7 @@ authors = ['Jachowski, JD', 'Bombaci, S', 'Caravaggi, A', 'Chalmers, A', 'Clulow
 journal = "Science"
 year = 2019
 pages = "6438"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1007/s00146-023-01829-4"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Jachowski, J., Bombaci, S., Caravaggi, A., Chalmers, A., Clulow, S., Griffin, A., Hayward, M., Heurich, M., Linnell, J., Marnewick, K., others (2019). By trying to be everything, rewilding risks meaning nothing. Science."""
 bibtex = """@article{jachowski2019trying,

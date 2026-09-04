@@ -7,7 +7,7 @@ authors = ['Caravaggi, Anthony', 'James, Katherine']
 journal = "Nature"
 year = 2017
 pages = "458--458"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1038/549458d"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Caravaggi, A., James, K. (2017). Conferencing in 140 characters. Nature."""
 bibtex = """@article{caravaggi2017conferencing,

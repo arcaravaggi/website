@@ -7,7 +7,7 @@ authors = ['Caravaggi, Anthony', 'Leach, Katie', 'Santilli, Francesco', 'Rintala
 journal = "Biological Invasions"
 year = 2017
 pages = "655--674"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1007/s10530-016-1330-z"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Caravaggi, A., Leach, K., Santilli, F., Rintala, J., Helle, P., Tiainen, J., Bisi, F., Martinoli, A., Montgomery, W. I., Reid, N. (2017). Niche overlap of mountain hare subspecies and the vulnerability of their ranges to invasion by the European hare; the (bad) luck of the Irish. Biological Invasions."""
 bibtex = """@article{caravaggi2017niche,

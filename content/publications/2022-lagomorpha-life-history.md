@@ -7,7 +7,7 @@ authors = ['Caravaggi, Anthony']
 journal = "Encyclopedia of animal cognition and behavior"
 year = 2022
 pages = "3826--3834"
-doi = "http://www.doi.org/"
+doi = "https://doi.org/10.1007/978-3-319-47829-6_1206-1"
 pdf = "/publications/"
 
 # Additional links
@@ -16,6 +16,8 @@ video = ""
 news = ""
 data = ""
 infographic = ""
+
+summary = """No summary available."""
 
 apa = """Caravaggi, A. (2022). Lagomorpha life history. Encyclopedia of animal cognition and behavior."""
 bibtex = """@incollection{caravaggi2022lagomorpha,
